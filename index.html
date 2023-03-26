@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="js/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="js/WordClock.js"></script>
+    <script type="text/javascript" src="js/Utility.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/P5/p5.min.js"></script>
+    <script type="text/javascript" src="js/sketch.js"></script>
+
+    <!-- <script type="text/javascript" src="js/P5/p5.min.js"></script>
+    <script type="text/javascript" src="js/Color.js"></script>
+    <script type="text/javascript" src="js/RandomPalette.js"></script>
+    <script type="text/javascript" src="js/sketch.js"></script> -->
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="canvasContain">
+        <div class="artBoardContainer"></div><!-- This is where P5js will create its canvas  -->
+    </div>
+    <!-- <div class="container"> -->
+    <div class="row">
+        <div class='item its'>i</div>
+        <div class='item its'>t</div>
+        <div class='item its'>'</div>
+        <div class='item its'>s</div>
+
+        <div class='item twenty'>t</div>
+        <div class='item twenty'>w</div>
+        <div class='item twenty'>e</div>
+        <div class='item twenty'>n</div>
+        <div class='item twenty'>t</div>
+        <div class='item twenty'>y</div>
+        <div class='item'>b</div>
+        <div class='item'>i</div>
+        <div class='item'>g</div>
+        <div class='item thirty'>t</div>
+        <div class='item thirty'>h</div>
+        <div class='item thirty'>i</div>
+        <div class='item thirty'>r</div>
+        <div class='item thirty'>t</div>
+        <div class='item thirty'>y</div>
+
+        <div class='item mOne'>o</div>
+        <div class='item mOne'>n</div>
+        <div class='item mOne'>e</div>
+        <div class='item mEleven'>e</div>
+        <div class='item mEleven'>l</div>
+        <div class='item mEleven'>e</div>
+        <div class='item mEleven'>v</div>
+        <div class='item mEleven'>e</div>
+        <div class='item mEleven'>n</div>
+        <div class='item'>u</div>
+        <div class='item mTwo twelve'>t</div>
+        <div class='item mTwo twelve'>w</div>
+        <div class='item mTwo twelve'>e</div>
+        <div class='item twelve'>l</div>
+        <div class='item twelve'>v</div>
+        <div class='item twelve'>e</div>
+        <div class='item mThree thirteen'>t</div>
+        <div class='item mThree thirteen'>h</div>
+        <div class='item thirteen'>i</div>
+        <div class='item mThree thirteen'>r</div>
+        <div class='item thirteen'>t</div>
+        <div class='item mThree thirteen'>e</div>
+        <div class='item mThree thirteen'>e</div>
+        <div class='item thirteen'>n</div>
+        <div class='item'>c</div>
+        <div class='item'>k</div>
+        <div class='item mFour fourteen'>f</div>
+        <div class='item mFour fourteen'>o</div>
+        <div class='item mFour fourteen'>u</div>
+        <div class='item mFour fourteen'>r</div>
+        <div class='item fourteen'>t</div>
+        <div class='item fourteen'>e</div>
+        <div class='item fourteen'>e</div>
+        <div class='item fourteen'>n</div>
+        <div class='item fifteen'>f</div>
+        <div class='item fifteen'>i</div>
+        <div class='item fifteen'>f</div>
+
+
+
+        <div class='item fifteen'>t</div>
+        <div class='item fifteen'>e</div>
+        <div class='item fifteen'>e</div>
+        <div class='item fifteen'>n</div>
+        <div class='item mSix sixteen'>s</div>
+        <div class='item mSix sixteen'>i</div>
+        <div class='item mSix sixteen'>x</div>
+        <div class='item sixteen'>t</div>
+        <div class='item sixteen'>e</div>
+        <div class='item sixteen'>e</div>
+        <div class='item sixteen'>n</div>
+
+        <div class='item mFive'>f</div>
+        <div class='item mFive'>i</div>
+        <div class='item mFive'>v</div>
+
+        <div class='item mFive'>e</div>
+        <div class='item'>o</div>
+        <div class='item'>u</div>
+        <div class='item mSeven seventeen'>s</div>
+        <div class='item mSeven seventeen'>e</div>
+        <div class='item mSeven seventeen'>v</div>
+        <div class='item mSeven seventeen'>e</div>
+        <div class='item mSeven seventeen'>n</div>
+        <div class='item seventeen'>t</div>
+        <div class='item seventeen'>e</div>
+        <div class='item seventeen'>e</div>
+        <div class='item seventeen'>n</div>
+        <div class='item mEight eigthteen'>e</div>
+        <div class='item mEight eigthteen'>i</div>
+        <div class='item mEight eigthteen'>g</div>
+        <div class='item mEight eigthteen'>h</div>
+        <div class='item mEight eigthteen'>t</div>
+        <div class='item eigthteen'>e</div>
+        <div class='item eigthteen'>e</div>
+        <div class='item eigthteen'>n</div>
+        <div class='item mNine nineteen'>n</div>
+        <div class='item mNine nineteen'>i</div>
+        <div class='item mNine nineteen'>n</div>
+        <div class='item mNine nineteen'>e</div>
+        <div class='item nineteen'>t</div>
+        <div class='item nineteen'>e</div>
+        <div class='item nineteen'>e</div>
+        <div class='item nineteen'>n</div>
+        <div class='item mTen'>t</div>
+        <div class='item mTen'>e</div>
+        <div class='item mTen'>n</div>
+
+        <div class='item minute minutes'>m</div>
+        <div class='item minute minutes'>i</div>
+        <div class='item minute minutes'>n</div>
+        <div class='item minute minutes'>u</div>
+        <div class='item minute minutes'>t</div>
+        <div class='item minute minutes'>e</div>
+        <div class='item minutes'>s</div>
+        <div class='item past'>p</div>
+        <div class='item past'>a</div>
+        <div class='item past'>s</div>
+        <div class='item past'>t</div>
+        <div class='item to'>t</div>
+        <div class='item to'>o</div>
+        <div class='item noon'>n</div>
+        <div class='item noon'>o</div>
+        <div class='item noon'>o</div>
+        <div class='item noon'>n</div>
+
+        <div class='item one'>o</div>
+        <div class='item one'>n</div>
+        <div class='item one'>e</div>
+        <div class='item two'>t</div>
+        <div class='item two'>w</div>
+        <div class='item two'>o</div>
+        <div class='item three'>t</div>
+        <div class='item three'>h</div>
+        <div class='item three'>r</div>
+        <div class='item three'>e</div>
+        <div class='item three'>e</div>
+
+        <div class='item'>i</div>
+        <div class='item'>c</div>
+        <div class='item'>o</div>
+        <div class='item'>u</div>
+        <div class='item'>s</div>
+        <div class='item four'>f</div>
+        <div class='item four'>o</div>
+        <div class='item four'>u</div>
+        <div class='item four'>r</div>
+        <div class='item five'>f</div>
+        <div class='item five'>i</div>
+        <div class='item five'>v</div>
+        <div class='item five'>e</div>
+        <div class='item six'>s</div>
+        <div class='item six'>i</div>
+        <div class='item six'>x</div>
+        <div class='item seven'>s</div>
+        <div class='item seven'>e</div>
+        <div class='item seven'>v</div>
+        <div class='item seven'>e</div>
+        <div class='item seven'>n</div>
+        <div class='item'>f</div>
+        <div class='item eight'>e</div>
+        <div class='item eight'>i</div>
+        <div class='item eight'>g</div>
+        <div class='item eight'>h</div>
+        <div class='item eight'>t</div>
+        <div class='item nine'>n</div>
+        <div class='item nine'>i</div>
+        <div class='item nine'>n</div>
+        <div class='item nine'>e</div>
+        <div class='item ten'>t</div>
+        <div class='item ten'>e</div>
+        <div class='item ten'>n</div>
+        <div class='item eleven'>e</div>
+        <div class='item eleven'>l</div>
+        <div class='item eleven'>e</div>
+        <div class='item eleven'>v</div>
+        <div class='item eleven'>e</div>
+        <div class='item eleven'>n</div>
+
+        <div class='item butts'>b</div>
+        <div class='item butts'>u</div>
+        <div class='item butts'>t</div>
+        <div class='item butts'>t</div>
+        <div class='item butts'>s</div>
+        <div class='item midnight'>m</div>
+        <div class='item midnight'>i</div>
+        <div class='item midnight'>d</div>
+        <div class='item midnight'>n</div>
+        <div class='item midnight'>i</div>
+        <div class='item midnight'>g</div>
+        <div class='item midnight'>h</div>
+        <div class='item midnight'>t</div>
+        <div class='item oclock'>o</div>
+        <div class='item oclock'>'</div>
+        <div class='item oclock'>c</div>
+        <div class='item oclock'>l</div>
+        <div class='item oclock'>o</div>
+        <div class='item oclock'>c</div>
+        <div class='item oclock'>k</div>
+        <div class='item'>m</div>
+        <div class='item'>e</div>
+        <div class='item in_the'>i</div>
+        <div class='item in_the'>n</div>
+        <div class='item in_the'>t</div>
+        <div class='item in_the'>h</div>
+        <div class='item in_the'>e</div>
+        <div class='item afternoon'>a</div>
+        <div class='item afternoon'>f</div>
+        <div class='item afternoon'>t</div>
+        <div class='item afternoon'>e</div>
+        <div class='item afternoon'>r</div>
+        <div class='item afternoon'>n</div>
+        <div class='item afternoon'>o</div>
+        <div class='item afternoon'>o</div>
+        <div class='item afternoon'>n</div>
+        <div class='item morning'>m</div>
+        <div class='item morning'>o</div>
+        <div class='item morning'>r</div>
+        <div class='item morning'>n</div>
+        <div class='item morning'>i</div>
+        <div class='item morning'>n</div>
+        <div class='item morning'>g</div>
+        <div class='item'>m</div>
+        <div class='item night'>n</div>
+        <div class='item night'>i</div>
+        <div class='item night'>g</div>
+        <div class='item night'>h</div>
+        <div class='item night'>t</div>
+        <div class='item evening'>e</div>
+        <div class='item evening'>v</div>
+        <div class='item evening'>e</div>
+        <div class='item evening'>n</div>
+        <div class='item evening'>i</div>
+        <div class='item evening'>n</div>
+        <div class='item evening'>g</div>
+    </div>
+    <!-- </div> -->
+</body>
+
+</html>
